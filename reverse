@@ -1,0 +1,17 @@
+import java.util.scanner;
+public class A{
+public static void main(String args[])
+{ int B;
+  int n;
+  int rev=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Number: ");
+int n=sc.nxtInt();
+while(n!=00
+{B=n%10;
+rev=rev*10+B;
+n=n/10;
+}
+System.out.println("Reverse is "+rev);
+}
+}
