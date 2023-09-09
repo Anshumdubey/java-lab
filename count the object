@@ -1,0 +1,11 @@
+public class Swap
+{
+    static int count;
+    Swap(){
+        count++;
+    }
+    public static void main(String[]args)
+   { Swap s1=new Swap();
+    Swap s2=new Swap();
+    System.out.println(count);}
+    }
