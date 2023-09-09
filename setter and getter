@@ -1,0 +1,21 @@
+public class Main
+{
+    double length;
+    double breadth;
+    public void setter(double l,double b)
+    { length=l;
+    breadth=b;}
+    public void getter()
+    { 
+        System.out.println("length= "+length);
+        System.out.println("breadth= "+breadth);
+    }
+    public static void main(String[]args)
+    {
+        Main rect1=new Main();
+        rect1.setter(64.4,32.4);
+        rect1.getter();
+    }
+
+	
+}
