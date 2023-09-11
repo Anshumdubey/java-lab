@@ -1,0 +1,21 @@
+public class Lamp
+{
+  boolean isON;
+  static boolean SwitchOn ()
+  {
+    isON = True;
+    return (isON);
+  }
+  static boolean SwitchOff ()
+  {
+    isON = False;
+    return (isON);
+  }
+
+public static void main (String[]args)
+{
+  Lamp led = new Lamp ();
+  Lamp halogen = new Lamp ();
+System.out.println (Lamp.isON);
+System.out.println (halogen.isON);
+}}
