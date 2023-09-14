@@ -1,0 +1,10 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String first="java";
+		System.out.println("first string "+first);
+		String second="python";
+			System.out.println("second string "+second);
+		String third="javascript";
+	System.out.println("third string "+third);}
+}
