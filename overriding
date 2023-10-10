@@ -1,0 +1,32 @@
+class parent
+{
+ void display ()
+  {
+    System.out.println ("this is parent class");
+  }
+  void show(int num){
+      System.out.println("this number in the parent class is "+num);
+  }}
+  
+      class child extends parent
+{
+    @Override
+    void display(){
+    System.out.println("this is child class ");
+}
+void show(double num){
+    System.out.println("ths number in the child class is: "+num);
+}
+}
+public class main{
+    public static void main (String[]args){
+    parent pObj=new parent();
+    parent cObj=new child();
+    pObj.show(5);
+    cObj.show(7.5);
+    pObj.display();
+    cObj.display();
+}
+
+}
+ 
