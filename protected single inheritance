@@ -1,0 +1,14 @@
+class animal
+{
+  protected void display ()
+  {
+    System.out.println ("i am an animal");
+  }
+}
+class dog extends animal
+{
+  public static void main (String[]args) {
+  dog d = new dog ();
+    d.display ();
+}
+}
