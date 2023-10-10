@@ -1,0 +1,40 @@
+public class Shape {
+    public void getPerimeter()
+    {
+        return 0.0;
+    }
+
+    public void getArea() {
+        return 0.0;
+    }
+public class Circle extends Shape {
+    private void radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public void getPerimeter()
+    {
+        return 2 *3.14 * radius;
+    }
+    public void getArea()
+    {
+        return 3.14 * radius * radius;
+    }
+}public class rectangle extends Shape {
+    private void length,breadth;
+
+    public Circle(double length,double breadth)
+    {
+        this.length = length;
+        this.breadth = breadth;
+    }
+    public void getPerimeter()
+    {
+        return 2*(length+breadth);
+    }
+    public void getArea()
+    {
+        return length*breadth;
+    }
+}
