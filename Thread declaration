@@ -1,0 +1,34 @@
+
+
+import java.util.Scanner;
+ class Main extends Thread
+{
+    public static void main(String[]args)
+    {
+        Main thread=new Main();
+        thread.start();
+        System.out.println("This code runs outside thread");
+    }
+    public void run()
+    {
+        System.out.println("This code runs in a thread");
+    }
+}
+
+//****Edit****//
+
+import java.util.Scanner;
+ class Main implements Runnable
+ {
+     public static void main(String[]args)
+     {
+         Main obj=new Main();
+         Thread thread=new Thread(obj);
+         thread.start();
+         System.out.println("This code outside thread");
+     }
+     public void run()
+     {
+         System.out.println("This code runs thread");
+     }
+ }
