@@ -1,0 +1,29 @@
+
+
+import java.util.Scanner;
+ class Multiply implements Runnable
+ {
+     public void run()
+     {
+         for(int i=1;i<=10;i++)
+         {
+             System.out.println("2"+"*"+i+"="+"2*i");
+         }
+         for(int i=1;i<=10;i++)
+         {
+             System.out.println("3"+"*"+i+"="+"3*i");
+         }
+     }
+ }
+class Main
+     {
+        public static void main(String[]args)
+        {
+           Multiply n1=new Multiply();
+           Thread t1=new Thread(n1);
+           t1.start();
+           Multiply n2=new Multiply();
+           Thread t2=new Thread(n2);
+           t2.start();
+        }
+     }
